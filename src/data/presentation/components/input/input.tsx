@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 import Styles from './input-styles.scss'
 
 type Props = React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>

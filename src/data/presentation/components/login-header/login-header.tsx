@@ -1,4 +1,4 @@
-import React, { memo } from "react"
+import React, { memo } from 'react'
 import Styles from './login-header-styles.scss'
 import Logo from '../../components/logo/logo'
 
