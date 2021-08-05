@@ -10,7 +10,7 @@
   ],
   "plugins": ["react"],
   "parserOptions": {
-    "project": "./clean-react/tsconfig.json"
+    "project": "./tsconfig.json"
   },
   "rules": {
     "@typescript-eslint/consistent-type-definitions": "off",
