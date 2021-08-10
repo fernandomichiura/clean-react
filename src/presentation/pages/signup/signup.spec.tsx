@@ -136,7 +136,7 @@ describe('SignUp Component', () => {
     const email = faker.internet.email()
     const password = faker.internet.password()
     await simulateValidSubmit(sut, name, email, password)
-    expect(addAccountSpy.params).toEqual({ 
+    expect(addAccountSpy.params).toEqual({
       name,
       email,
       password,

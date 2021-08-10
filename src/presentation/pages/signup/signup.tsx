@@ -7,8 +7,8 @@ import { Validation } from '@/presentation/protocols/validation'
 import { AddAccount, SaveAccessToken } from '@/domain/usecases'
 
 type Props = {
-  validation: Validation,
-  addAccount: AddAccount,
+  validation: Validation
+  addAccount: AddAccount
   saveAccessToken: SaveAccessToken
 }
 
@@ -43,7 +43,7 @@ const SignUp: React.FC<Props> = ({ validation, addAccount, saveAccessToken }: Pr
       if (state.isLoading || state.nameError || state.emailError || state.passwordError || state.passwordConfirmationError) {
         return
       }
-  
+
       setState({ ...state, isLoading: true })
       const account = await addAccount.add({
         name: state.name,

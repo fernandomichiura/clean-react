@@ -1,4 +1,4 @@
-import { fireEvent, RenderResult } from "@testing-library/react"
+import { fireEvent, RenderResult } from '@testing-library/react'
 import faker from 'faker'
 
 export const testChildCount = (sut: RenderResult, fieldName: string, count: number): void => {
