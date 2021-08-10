@@ -8,7 +8,7 @@ type Props = {
   validation: Validation
 }
 
-const Signup: React.FC<Props> = ({ validation }: Props) => {
+const SignUp: React.FC<Props> = ({ validation }: Props) => {
   const [state, setState] = useState({
     isLoading: false,
     name: '',
@@ -49,4 +49,4 @@ const Signup: React.FC<Props> = ({ validation }: Props) => {
   )
 }
 
-export default Signup
+export default SignUp
