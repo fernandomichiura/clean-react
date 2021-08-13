@@ -7,7 +7,7 @@ const populateFields = (): void => {
   cy.getByTestId('password').focus().type(faker.random.alphaNumeric(5))
 }
 
-const simulateValidSubmit = ():void => {
+const simulateValidSubmit = (): void => {
   populateFields()
   cy.getByTestId('submit').click()
 }

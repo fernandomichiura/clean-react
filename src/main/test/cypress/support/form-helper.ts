@@ -12,7 +12,7 @@ export const testMainError = (error: string): void => {
   cy.getByTestId('main-error').should('contain.text', error)
 }
 
-export const testHttpCallsCount = (count: number) => {
+export const testHttpCallsCount = (count: number): void => {
   cy.get('@request.all').should('have.length', count)
 }
 
