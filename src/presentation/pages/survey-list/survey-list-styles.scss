@@ -59,14 +59,6 @@
             position: absolute;
             top: -10px;
             right: -10px;
-
-            &.red {
-              background-color: $invalid;
-            }
-
-            &.green {
-              background-color: $valid;
-            }
           }
 
           time {
@@ -102,6 +94,7 @@
             font-size: 18px;
             margin: 24px;
             align-self: center;
+            flex-grow: 1;
           }
         }
 
@@ -117,6 +110,21 @@
           &:hover {
             color: $primaryDark;
           }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .surveyListWrap {
+    .contentWrap {
+      ul {
+        flex-direction: column;
+  
+        li {
+          flex-basis: 100%;
+          min-height: 250px;
         }
       }
     }
