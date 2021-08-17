@@ -1,5 +1,5 @@
-import { UnexpectedError } from "@/domain/errors"
-import { AccountModel } from "@/domain/models"
+import { UnexpectedError } from '@/domain/errors'
+import { AccountModel } from '@/domain/models'
 import { makeLocalStorageAdapter } from '@/main/factories/cache/local-storage-adapter-factory'
 
 export const setCurrentAccountAdapter = (account: AccountModel): void => {
@@ -7,4 +7,8 @@ export const setCurrentAccountAdapter = (account: AccountModel): void => {
     throw new UnexpectedError()
   }
   makeLocalStorageAdapter().set('account', account)
+}
+
+export const getCurrentAccountAdapter = (): void => {
+  return makeLocalStorageAdapter().get('account')
 }
