@@ -6,7 +6,7 @@ import React from 'react'
 
 class LoadSurveyListSpy implements LoadSurveyList {
   callsCount = 0
-  
+
   async loadAll (): Promise<SurveyModel[]> {
     this.callsCount++
     return []

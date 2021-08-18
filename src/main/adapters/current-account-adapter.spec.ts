@@ -14,7 +14,7 @@ describe('CurrentAccountAdapter', () => {
     const setSpy = jest.spyOn(LocalStorageAdapter.prototype, 'set')
     setCurrentAccountAdapter(account)
     expect(setSpy).toHaveBeenCalledWith('account', account)
-    
+
     // since LocalStorageAdapter methods are now dummies, they can't set values to localStorage
     console.log(localStorage)
   })

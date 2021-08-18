@@ -47,7 +47,7 @@ describe('AxiosHttpClient', () => {
       expect(promise).toEqual(mockedAxios.post.mock.results[0].value)
     })
   })
-  
+
   describe('get', () => {
     test('Should call axios.post with correct values', async () => {
       const request = mockGetRequest()

@@ -9,8 +9,8 @@ import { PrivateRoute } from '@/presentation/components/'
 
 const Router: React.FC = () => {
   return (
-    <ApiContext.Provider 
-      value={{ 
+    <ApiContext.Provider
+      value={{
         setCurrentAccount: setCurrentAccountAdapter,
         getCurrentAccount: getCurrentAccountAdapter
       }}
