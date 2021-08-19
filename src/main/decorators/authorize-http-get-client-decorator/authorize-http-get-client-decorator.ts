@@ -16,7 +16,7 @@ export class AuthorizeHttpGetClientDecorator implements HttpGetClient {
         })
       })
     }
-    await this.httpGetClientSpy.get(params)
-    return null
+    const httpResponse = await this.httpGetClientSpy.get(params)
+    return httpResponse
   }
 }
