@@ -1,4 +1,3 @@
-import { LoadSurveyList } from '@/domain/usecases'
 import { RemoteLoadSurveyList } from '@/data/usecases'
 import faker from 'faker'
 
