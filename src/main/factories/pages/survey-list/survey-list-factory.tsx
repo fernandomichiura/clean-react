@@ -4,7 +4,7 @@ import React from 'react'
 
 export const makeSurveyList: React.FC = () => {
   return (
-    <SurveyList 
+    <SurveyList
       loadSurveyList={makeRemoteLoadSurveyList()}
     />
   )
