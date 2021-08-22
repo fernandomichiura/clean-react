@@ -7,7 +7,7 @@ import React from 'react'
 import { AccountModel } from '@/domain/models'
 import { mockAccountModel } from '@/domain/test'
 
-type SutTypes = { 
+type SutTypes = {
   history: MemoryHistory
   setCurrentAccountMock: (account: AccountModel) => void
 }
