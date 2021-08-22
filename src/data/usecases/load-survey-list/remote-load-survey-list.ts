@@ -12,7 +12,7 @@ export class RemoteLoadSurveyList implements LoadSurveyList {
     const httpResponse = await this.httpGetClient.get({ url: this.url })
     const remoteSurveys = httpResponse.body || []
     switch (httpResponse.statusCode) {
-      case HttpStatusCode.ok: return remoteSurveys.map(remoteSurvey => Object.assign(remoteSurvey, { 
+      case HttpStatusCode.ok: return remoteSurveys.map(remoteSurvey => Object.assign(remoteSurvey, {
         date: new Date(remoteSurvey.date)
       }))
       case HttpStatusCode.noContent: return []

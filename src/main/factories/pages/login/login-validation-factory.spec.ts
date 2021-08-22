@@ -8,7 +8,7 @@ describe('LoginValidationFactory', () => {
       new RequiredFieldValidation('email'),
       new EmailValidation('email'),
       new RequiredFieldValidation('password'),
-      new MinLengthValidation('password', 5),
+      new MinLengthValidation('password', 5)
     ]))
   })
 })
