@@ -1,7 +1,6 @@
 import { setCurrentAccountAdapter, getCurrentAccountAdapter } from './current-account-adapter'
 import { mockAccountModel } from '@/domain/test'
 import { LocalStorageAdapter } from '@/infra/cache/local-storage-adapter'
-import { UnexpectedError } from '@/domain/errors'
 
 // it mocks all methods inside this component and sets them as dummies!!
 jest.mock('@/infra/cache/local-storage-adapter')
@@ -17,13 +16,6 @@ describe('CurrentAccountAdapter', () => {
 
     // since LocalStorageAdapter methods are now dummies, they can't set values to localStorage
     console.log(localStorage)
-  })
-
-  // Exception case: passing invalid 'account' parameter
-  test('Should throw UnexpectedError', () => {
-    expect(() => {
-      setCurrentAccountAdapter(undefined)
-    }).toThrow(new UnexpectedError())
   })
 
   test('Should call LocalStorageAdapter.get with correct values', () => {
